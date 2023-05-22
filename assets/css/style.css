@@ -1,0 +1,671 @@
+*{
+    margin: 0px;
+    overflow-x: hidden;
+}
+body{
+    box-sizing: border-box;
+}
+
+/* ---------------------------------------navbar -------------*/
+#hamberger{
+  margin-right: 10px; 
+}
+.logo{
+  height: 50px;
+  width: 55px;
+  margin-right: 0px;
+}
+#store-nav{
+  height: 16px;
+  WIDTH: 16PX;
+  MARGIN-right: 6px;
+  color: #48D1CC;
+}
+#nav2{
+  color: black;
+}
+#nav-padding{
+  padding-left: 40px;
+  padding-right: 20px;
+  box-shadow: 2px 6px 6px rgba(0,0,0,0.3);
+}
+@media (max-width: 768px){
+  #nav-padding{
+    
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .logo{
+    height: 40px;
+    width: 45px;
+    
+  }
+
+}
+
+
+
+  /*-----------------------------------  home page ---------------------------------------------*/
+
+  .home-div{
+    background: rgba(0,0,0,0.7)url("https://img.freepik.com/premium-photo/smart-home-interface-with-augmented-realty-iot-object-interior-design_756748-3163.jpg?w=996");
+    background-size: cover;
+    background-blend-mode: darken;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 200px;
+    
+  }
+  .home-img{
+    height: 400px;
+    width: 500px;
+    border-radius: 40px;
+    background-color: transparent;
+    margin-bottom: 90px;
+    animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+@media (min-width: 768px) and (max-width: 1300px){
+  .home-img{
+    width: 300px;
+  }
+  
+}
+@keyframes up-down {
+  0% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+  
+  .small-text{
+    font-family: 'Special Elite', cursive;
+    font-weight: 500;
+    font-size: 25px;
+    color: orange;
+  }
+  .head{
+    font-family: cursive;
+    font-weight: 600;
+    font-size: 40px;
+    color: white;
+  }
+  .small-para{
+    font-family: fangsong;
+    font-weight: 500;
+    font-size: 18px;
+    color: white;
+  }
+  .button{
+    height: 40px;
+    width: 120px;
+    border: 0px solid orange;
+    border-radius: 18px;
+    color: white;
+    background-color: #48D1CC;
+  }
+  @media(max-width:760px){
+    .mob-hide{
+      display: none;
+    }
+    .small-text{
+      font-size: 16px;
+      text-align: center;
+    }
+    .head{
+      font-size: 30px;
+      text-align: center;
+    }
+    .small-para{
+      font-size: 14px;
+      text-align: center;
+
+    }
+    .button{
+      height: 35px;
+      width: 110px
+    }
+    .mob-middle{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+    }
+    .btn-div{
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      
+    }
+    .home-div{
+      padding-top: 20px;
+    }
+    .home-img{
+      width: 10000px;
+    }
+
+
+  }
+
+
+  /*--------------------------------------   live life container  ------------------*/
+
+  .live-div{
+    background-color: #F0F8FF;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+  }
+  .head2{
+    font-family: "roboto";
+    font-weight: 600;
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
+  .head3{
+    font-family: "roboto";
+    font-weight: 600;
+    font-size: 16px;
+  }
+  .live-card-sub{
+    display: flex;
+  }
+  .live-img-sm{
+    height: 18px;
+    width: 18px;
+    border-radius: 3px;
+  }
+  .live-sm-bg{
+    height: 30px;
+    width: 30px;
+    background-color: #f4c430;
+    border-radius: 20px;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    margin-right: 20px;
+  }
+  .live-card{
+    display: flex;
+    flex-direction: column;
+  }
+  .small-para2{
+    font-family: "roboto";
+    font-weight: 500;
+    font-size: 15px;
+    color: grey;
+    width: 85%;
+
+  }
+  .live-img-main{
+    height: 90%;
+    width: 90%;
+    border-radius: 40px;
+
+  }
+  .live-text-cont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media (max-width: 700px) {
+    .live-div{
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    .live-img-main{
+      height: 90%;
+      width: 90%;
+    }
+    .head2{
+      font-size: 24px;
+      margin-bottom: 20px;
+      text-align: center;
+
+    }
+    .head3{
+      font-family: "roboto";
+      font-weight: 600;
+      font-size: 14px;
+
+    }
+    .live-sm-bg{
+      height: 30px;
+      margin-right: 10px;
+      width: 32px;
+    }
+    .small-para2{
+      font-size: 12px;
+      text-align: center;
+      width: 100%;
+    }
+    .live-card{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .live-img-main{
+      text-align: center;
+      padding: 0px;
+    }
+    .live-div{
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+  }
+
+  /*----------------------------------------------  items section -------------------------*/
+
+  .items-div{
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .items-img{
+    height: 150px;
+    width: 150px;
+  }
+  .items-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .small-para3{
+    font-family: "roboto";
+    font-weight: 500;
+    font-size: 14px;
+    color: grey;
+    width: 65%;
+    text-align: center;
+
+  }
+  .head4{
+    text-align: center;
+  }
+  @media (max-width: 700px) {
+    .items-img{
+      height: 120px;
+      width: 120px;
+    }
+    .small-para3{
+      width: 90%;
+      font-size: 12px;
+    }
+    .items-div{
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+  }
+  
+
+  /*----------------------------------------calculations section -----------------------------*/
+
+
+.calculations-div{
+  background-color: #F0F8FF;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.cal-text-cont{
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  
+
+}
+#progress-id{
+  width: 100%;
+}
+.count{
+  font-family: 'Special Elite', cursive;
+  font-weight: 800;
+  font-size: 50px;
+  color: #f4c430; 
+}
+.cal-card{
+  display: flex;
+  
+}
+.head5{
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 12px;
+  margin-left: 30px;
+}
+.cal-img-main{
+  height: 300px;
+  width: 400px;
+  border-radius: 20px;;
+
+}
+.card-cal{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+@media (max-width: 768px) and ( max-height: 800px){
+  .mob-none2{
+    display: none;
+
+  }
+}
+@media (max-width: 800px){
+  .count{
+    font-weight: 700;
+    font-size: 30px;
+  }
+  .head5{
+    font-size: 12px;
+    font-weight: 500;
+    margin-top: 8px;
+    margin-left: 30px;
+  }
+  .calculations-div{
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+}
+
+/*----------------------------------- workflow section ---------------------*/
+
+.work-div{
+    background: rgba(0,0,0,0.5) url('../img/workflow-main.png');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.work-text-div{
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.head6{
+  color: white;
+  font-size: 16px;
+  width: 98%;
+}
+.he{
+  color: white;
+  text-align: center;
+}
+.pa{
+  color: white;
+  font-size: 15px;
+  font-family: cursive;
+}
+.span{
+  color: #f4c430;
+}
+.space{
+  margin-bottom: 20px;
+}
+@media (max-width: 700px){
+  .pa{
+    font-weight: 300;
+    font-size: 12px;
+  }
+  .head6{
+    font-weight:500;
+    font-size: 12px;
+  } 
+  .hi{
+    width: 35px;
+  }
+  .work-div{
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .space{
+    margin-bottom: 10px;
+    
+  }
+}
+
+/*-------------------------------- customer section--------------*/
+
+
+
+
+
+
+
+
+.customer-div{
+ 
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+.hee{
+  text-align: center;
+  color: black;
+}
+.paa{
+  color: grey;
+  text-align: center;
+
+}
+.customer-img{
+  margin-top: 10px;
+  margin-bottom: 10px
+}
+
+.cus-card{
+  border :1px solid #48D1CC;
+  box-shadow:  4px 4px rgba(0,0,0,0.3);
+  border-radius: 9px;
+  width: 320px;
+  margin-top: 28px;
+  background-color: #B0E0E6;
+  display: flex;
+  margin-right: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+
+}
+.rowss{
+  display: flex;
+   justify-content: center;
+  align-items:center;
+}
+
+@media (max-width: 760px){
+  .cus-card{
+    width: 80%;
+    margin-right: 0px;
+
+  }
+
+  .hee{
+    font-size: 23px;
+    color: black !important;
+  }
+}
+
+/*---------------------------------------------------------------------------------------------------------  footer section ------------------*/
+
+.footer-div{
+  background: rgba(0,0,0,0.5) url('../img/workflow-main.png');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.unlist{
+  list-style-type: none;
+}
+.bg-container2{
+  background-color: white;
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  display: flex;flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.heade{
+  color: white;
+}
+.icon2{
+
+  color: white;
+  margin-right: 8px;
+}
+.footer-para{
+  font-family: "roboto";
+  font-weight: 600;
+  color: white;
+  font-size: 30px;
+}
+
+/*------------------------------login section -----------------------------*/
+
+
+.login-section{
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login-div{
+  display: flex;
+  height: 58%;
+  width: 40%;
+  flex-direction : column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #C0C0C0;
+  border-radius: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+@media (max-width: 768px){
+  .login-div{
+    margin-top: 20px;
+    width: 90%;
+    padding: 20px;
+    padding-top: 20px;
+    height: 56vh;
+  }
+  .login-section{
+    height: 80vh;
+    
+  }
+
+}
+
+@media (min-width: 768px) and (max-width: 1300px){
+  .login-div{
+    width: 70%;
+  }
+  .login-section{
+    height: 80vh;
+  }
+}
+
+
+/*---------------------------  register ---------------------------- */
+
+
+.register-section{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.register-div{
+  display: flex;
+  height: 88%;
+  width: 40%;
+  flex-direction : column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #C0C0C0;
+  border-radius: 20px;
+  padding-top: 20px;
+  margin-top: 100px;
+  padding-bottom: 20px;
+ margin-bottom: 80px;
+}
+
+
+@media (max-width: 768px){
+  .register-div{
+    margin-top: 100px;
+    width: 90%;
+    padding: 20px;
+    padding-top: 20px;
+    height: 90%;
+  }
+  .register-section{
+    height: 100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1400px){
+  .register-div{
+    width: 60%;
+    height: 70%;
+  }
+  .register-section{
+    height: 80vh;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
